@@ -67,6 +67,8 @@ def td_get_doc(ur):  # 获取小说每章的正文
                 f.write(chaptertitle)
                 f.write("\n".join(doc))
                 print("{}完成".format(title))
+        if not urls:
+            break
 
 
 if __name__ == '__main__':
